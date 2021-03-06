@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gmail Inbox</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table class="inbox">
+        <!-- Screen reader only thead -->
+        <thead class="sr-only">
+            <tr>
+                <th scope="col">Actions</th>
+                <th scope="col">Sender</th>
+                <th scope="col">Title</th>
+                <th scope="col">Timestamp</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="unread">
+                <td>
+                    <div class="inbox-actions">
+                        <div class="inbox-checkbox">
+                            <input type="checkbox" id="inbox-1" />
+                            <label for="inbox-1" class="sr-only">Select this email</label>
+                        </div>
+                        <button type="button" class="inbox-star">
+                            <span class="sr-only">Add to favorites</span>
+                        </button>
+                    </div>
+                </td>
+                <td>
+                    Discover Card
+                </td>
+                <td>
+                    <a href="#">
+                        <strong class="sr-only">Unread:</strong>
+                        <strong>Activate to earn 5&percnt; cash back</strong>
+                        <span>- At Gas Stations, Wholesale Clubs and Select Streaming Services...</span>
+                    </a>
+                </td>
+                <td>
+                    3:34 PM
+                </td>
+            </tr>
+            <tr class="read">
+                <td>
+                    <div class="inbox-actions">
+                        <div class="inbox-checkbox">
+                            <input type="checkbox" id="inbox-1" />
+                            <label for="inbox-1" class="sr-only">Select this email</label>
+                        </div>
+                        <button type="button" class="inbox-star">
+                            <span class="sr-only">Add to favorites</span>
+                        </button>
+                    </div>
+                </td>
+                <td>
+                    Fitbit
+                </td>
+                <td>
+                    <a href="#">
+                        <strong class="sr-only">Read:</strong>
+                        <span>Your weekly progress report from Fitbit!</span>
+                        <span>- Fitbit WEEKLY STATS Hi there! Here are your stats for Feb. 22 - Feb...</span>
+                    </a>
+                </td>
+                <td>
+                    Mar 2
+                </td>
+            </tr>
+            <tr class="read">
+                <td>
+                    <div class="inbox-actions">
+                        <div class="inbox-checkbox">
+                            <input type="checkbox" id="inbox-1" />
+                            <label for="inbox-1" class="sr-only">Select this email</label>
+                        </div>
+                        <button type="button" class="inbox-star">
+                            <span class="sr-only">Add to favorites</span>
+                        </button>
+                    </div>
+                </td>
+                <td>
+                    Spotify
+                </td>
+                <td>
+                    <a href="#">
+                        <strong class="sr-only">Read:</strong>
+                        <span>New music from artists you love, with Kygo on your Release Radar now</span>
+                        <span>- Your Release Radar is here: Fresh...</span>
+                    </a>
+                </td>
+                <td>
+                    Feb 27
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Add JS file -->
+    <script src="./app.js"></script>
+</body>
+</html>
